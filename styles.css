@@ -185,7 +185,7 @@ h1 {
   }
 }
 /* Responsive Design for Smaller Screens */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem; /* Even smaller font size for very small screens */
   }
@@ -207,4 +207,4 @@ h1 {
   #memory-text {
     font-size: 1rem; /* Smaller font size for very small screens */
   }
-}
+} */
