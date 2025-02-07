@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treasure Hunt - Find the Love!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="background-music" loop>
+    <source src="audio/Ikko-Mikke Title Track - Satinder Sartaaj.mp3" type="audio/mpeg">
+ 
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Heart Container -->
+  <div id="heart-container"></div>
+  <div class="container">
+    <h1>Treasure Hunt: Find the Love!</h1>
+    <div id="clue-container">
+      <p id="clue">Clue 1: Where did we first meet? (Hint: It's a place, not a date)</p>
+    </div>
+    <input type="text" id="answer-input" placeholder="Your answer...">
+    <button id="submit-btn">Submit</button>
+    <div id="result"></div>
+    <div id="memory-container" style="display: none;">
+      <img id="memory-image" src="" alt="Memory Image">
+      <p id="memory-text"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
