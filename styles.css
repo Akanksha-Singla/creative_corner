@@ -191,12 +191,12 @@ h1 {
   }
 
   #clue {
-    font-size: 1rem; /* Smaller font size for very small screens */
+    font-size: 1.6rem; /* Smaller font size for very small screens */
   }
 
   #answer-input {
     width: 95%; /* Wider input for very small screens */
-    font-size: 1rem; /* Smaller font size for very small screens */
+    font-size: 1.3rem; /* Smaller font size for very small screens */
   }
 
   #submit-btn {
