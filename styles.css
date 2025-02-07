@@ -184,3 +184,27 @@ h1 {
     font-size: 1.1rem;
   }
 }
+/* Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem; /* Even smaller font size for very small screens */
+  }
+
+  #clue {
+    font-size: 1rem; /* Smaller font size for very small screens */
+  }
+
+  #answer-input {
+    width: 95%; /* Wider input for very small screens */
+    font-size: 0.9rem; /* Smaller font size for very small screens */
+  }
+
+  #submit-btn {
+    font-size: 0.9rem; /* Smaller font size for very small screens */
+    padding: 8px 16px; /* Smaller padding for very small screens */
+  }
+
+  #memory-text {
+    font-size: 1rem; /* Smaller font size for very small screens */
+  }
+}

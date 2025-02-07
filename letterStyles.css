@@ -93,3 +93,20 @@
     }
   }
   
+@media (max-width: 480px) {
+    .love-letter-container {
+        width: 85%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .love-letter-container h1 {
+        font-size: 2rem;
+    }
+
+    #typed-text {
+        font-size: 1.3rem;
+    }
+
+   
+}
