@@ -17,36 +17,52 @@ body {
   max-width: 600px;
   width: 90%;
   margin: 20px;
-  padding: 30px;
+  padding: 20px; 
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   animation: fadeIn 1s ease-in-out;
 }
-
+/* .container {
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+  max-height: 90vh; 
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 h1 {
   color: #e74c3c;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem; /* Smaller font size for mobile */
+  margin-bottom: 15px; /* Reduced margin for mobile */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #clue-container {
-  margin: 20px 0;
+  margin: 15px 0; /* Reduced margin for mobile */
 }
 
 #clue {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Smaller font size for mobile */
   color: #5d4037;
   font-weight: 400;
   animation: slideIn 0.5s ease-in-out;
 }
 
 #answer-input {
-  padding: 12px;
-  width: 80%;
-  margin: 20px 0;
+  padding: 10px; /* Reduced padding for mobile */
+  width: 90%; /* Wider input for mobile */
+  margin: 15px 0; /* Reduced margin for mobile */
   border: 2px solid #e74c3c;
   border-radius: 10px;
   font-family: 'Pacifico', cursive;
@@ -61,13 +77,13 @@ h1 {
 }
 
 #submit-btn {
-  padding: 12px 24px;
+  padding: 10px 20px; /* Reduced padding for mobile */
   background-color: #e74c3c;
   color: #fff;
   border: none;
   border-radius: 10px;
   font-family: 'Pacifico', cursive;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Smaller font size for mobile */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -82,32 +98,47 @@ h1 {
 }
 
 #result {
-  margin: 20px 0;
-  font-size: 1.2rem;
+  margin: 15px 0; /* Reduced margin for mobile */
+  font-size: 1rem; /* Smaller font size for mobile */
   font-weight: bold;
   color: #e74c3c;
   animation: fadeIn 0.5s ease-in-out;
 }
 
-#memory-container {
-  margin-top: 30px;
+/* #memory-container {
+  margin-top: 20px; 
   animation: slideIn 0.5s ease-in-out;
+} */
+#memory-container {
+  margin-top: 20px;
+  animation: slideIn 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* #memory-image {
+  max-width: 100%;
+  height: fit-content;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+} */
 #memory-image {
   max-width: 100%;
+  max-height: 50vh; /* Ensures image doesn't overflow */
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
-
 #memory-image:hover {
   transform: scale(1.05);
 }
 
 #memory-text {
-  margin-top: 15px;
-  font-size: 1.3rem;
+  margin-top: 10px; /* Reduced margin for mobile */
+  font-size: 1.1rem; /* Smaller font size for mobile */
   font-style: italic;
   color: #e74c3c;
 }
@@ -130,7 +161,7 @@ h1 {
 
 .heart {
   position: absolute;
-  width: 20px; /* Keep original size */
+  width: 20px;
   height: 20px;
   background-color: #e74c3c;
   clip-path: path(
@@ -138,7 +169,7 @@ h1 {
   );
   animation: heartPop 1.5s ease-out;
   z-index: 1000;
-  transform: scale(2); /* Scale up while keeping proportions */
+  transform: scale(2);
 }
 
 /* Animations */
@@ -162,28 +193,6 @@ h1 {
   }
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  #clue {
-    font-size: 1.2rem;
-  }
-
-  #answer-input {
-    width: 90%;
-  }
-
-  #submit-btn {
-    font-size: 1rem;
-  }
-
-  #memory-text {
-    font-size: 1.1rem;
-  }
-}
 /* Responsive Design for Smaller Screens */
 @media (max-width: 480px) {
   h1 {
@@ -191,12 +200,12 @@ h1 {
   }
 
   #clue {
-    font-size: 1.6rem; /* Smaller font size for very small screens */
+    font-size: 1rem; /* Smaller font size for very small screens */
   }
 
   #answer-input {
     width: 95%; /* Wider input for very small screens */
-    font-size: 1.3rem; /* Smaller font size for very small screens */
+    font-size: 0.9rem; /* Smaller font size for very small screens */
   }
 
   #submit-btn {

@@ -9,7 +9,7 @@ const clues = [
       }
     },
     {
-      clue: "Clue 1: Sabse payara koun...? (Hint: opposite of you)",
+      clue: "Clue 2: Sabse payara koun...? (Hint: opposite of you)",
       answer: "me",
       memory: {
         text: "Our first meeting  was magical!",
@@ -17,7 +17,7 @@ const clues = [
       }
     },
     {
-      clue: "Clue 2: Our first out-station? (Hint:hum use nhi karte....)" ,
+      clue: "Clue 3: Our first out-station? (Hint:hum use nhi karte....)" ,
       answer: "kashmir",
       memory: {
         text: "You remembered!!!",
@@ -25,7 +25,7 @@ const clues = [
       }
     },
     {
-      clue: "Clue 3: Whose songs are our favorite ?",
+      clue: "Clue 4: Whose songs are our favorite ?",
       answer: "govinda",
       memory: {
         text: "Yes! 'Perfect'.",
@@ -33,7 +33,7 @@ const clues = [
       }
     },
     {
-      clue: "Clue 4: Last place we visited with shruti didi ? (Hint:k_r_a_)",
+      clue: "Clue 5: Last place we visited with shruti didi ? (Hint:k_r_a_)",
       answer: "karjat",
       memory: {
         text: "Yes! 'Perfect'.",
@@ -41,7 +41,7 @@ const clues = [
       }
     },
     {
-      clue: "Clue 5: Ye rate ye mosam nadi ka kinara..... ?((Hint: a place in jind, two words))",
+      clue: "Clue 6: Ye rate ye mosam nadi ka kinara..... ?((Hint: a place in jind, two words))",
       answer: "rani talab",
       memory: {
         text: "Yes! 'Perfect'.",
@@ -49,7 +49,7 @@ const clues = [
       }
     },
     {
-      clue: "Clue 6: Our first trip with family..... ?((Hint: a place in rajasthan))",
+      clue: "Clue 7: Our first trip with family..... ?((Hint: a place in rajasthan))",
       answer: "jaipur",
       memory: {
         text: "Yes! 'Perfect'.",
@@ -57,7 +57,7 @@ const clues = [
       }
     },
     {
-      clue: "Clue 7: Our favourite color..... ?",
+      clue: "Clue 8: Our favourite color..... ?",
       answer: "green",
       memory: {
         text: "Yes! 'Perfect'.",
