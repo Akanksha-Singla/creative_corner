@@ -100,6 +100,8 @@ h1 {
 #result {
   margin: 15px 0; /* Reduced margin for mobile */
   font-size: 1rem; /* Smaller font size for mobile */
+  margin: 15px 0; /* Reduced margin for mobile */
+  font-size: 1rem; /* Smaller font size for mobile */
   font-weight: bold;
   color: #e74c3c;
   animation: fadeIn 0.5s ease-in-out;
