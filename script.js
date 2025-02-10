@@ -68,6 +68,7 @@ const clues = [
   
   let currentClueIndex = 0;
   const clueElement = document.getElementById("clue");
+  const clueContainer = document.getElementById("clue-container");
   const answerInput = document.getElementById("answer-input");
   const submitBtn = document.getElementById("submit-btn");
   const resultElement = document.getElementById("result");
@@ -95,9 +96,12 @@ const clues = [
   submitBtn.addEventListener("click", () => {
     const userAnswer = answerInput.value.trim().toLowerCase();
     const correctAnswer = clues[currentClueIndex].answer;
-  
+    clueContainer.style.display = "none"
+    answerInput.style.display ="none"
+    submitBtn.style.display ="none"
     if (userAnswer === correctAnswer) {
       resultElement.textContent = "Correct! Unlocking a memory...";
+      
       displayMemory(clues[currentClueIndex].memory);
       createHearts(); // Trigger heart animation
 
@@ -108,7 +112,11 @@ const clues = [
           clueElement.textContent = clues[currentClueIndex].clue;
           resultElement.textContent = "";
           answerInput.value = "";
+          clueContainer.style.display = "block"
+          answerInput.style.display ="block"
+          submitBtn.style.display="block"
           memoryContainer.style.display = "none";
+
         }, 3000);
       } else {
         resultElement.textContent = "Congratulations! You've found all the treasures!";
